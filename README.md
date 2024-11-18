@@ -73,7 +73,8 @@ The project is implemented in **Python 3** and is designed to work with TSP inst
 ### Directory Structure
 
 ```
-├── gurobi.py
+├── Gurobi
+│   └── [gurobi.py]
 ├── assets
 │   └── [TSPLIB .tsp files]
 ├── som-tsp-master
