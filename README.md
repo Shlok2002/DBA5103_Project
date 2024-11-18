@@ -189,9 +189,7 @@ The algorithm was tested using several benchmark instances from the **National T
 
 **Qatar Instance Progression**
 
-![Qatar Instance Progression](output/qatar_progression.png)
-
-*(Three different stages of execution for the Finland instance)*
+![Qatar Instance Progression](optimal_route_output_image/tsp_qatar.gif)
 
 ---
 
