@@ -74,7 +74,7 @@ The project is implemented in **Python 3** and is designed to work with TSP inst
 
 ```
 ├── Gurobi
-│   └── [gurobi.py]
+│   └── Route.ipynb
 ├── assets
 │   └── [TSPLIB .tsp files]
 ├── som-tsp-master
