@@ -73,34 +73,21 @@ The project is implemented in **Python 3** and is designed to work with TSP inst
 ### Directory Structure
 
 ```
-├── src
-│   ├── distance.py
-│   ├── io_helper.py
-│   ├── main.py
-│   ├── neuron.py
-│   ├── plot.py
-├── data
-│   └── [Your TSPLIB .tsp files]
+├── gurobi.py
+├── assets
+│   └── [TSPLIB .tsp files]
+├── som-tsp-master
 ├── output
 │   └── optimal_route_output_image
-├── requirements.txt
 ├── README.md
 ```
-
-### Key Modules
-
-- `distance.py`: Functions for calculating Euclidean distances and processing distance matrices.
-- `io_helper.py`: Utilities for parsing `.tsp` files and loading city coordinates.
-- `main.py`: Entry point for running the SOM algorithm.
-- `neuron.py`: Defines the neuron class and handles network initialization and updates.
-- `plot.py`: Functions for visualizing the SOM progression and final routes.
 
 ### Dependencies
 
 - Python 3.x
 - NumPy
 - Matplotlib
-- Gurobi Optimizer (optional for route refinement)
+- Gurobi Optimizer 
 
 ---
 
@@ -117,10 +104,6 @@ The project is implemented in **Python 3** and is designed to work with TSP inst
 
 2. **Install Dependencies**
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
    *Note: Gurobi requires a separate installation and a valid license.*
 
 ### Running the Algorithm
@@ -132,19 +115,8 @@ The project is implemented in **Python 3** and is designed to work with TSP inst
 2. **Execute the Script**
 
    ```bash
-   python src/main.py --input data/your-instance.tsp --iterations 30000
+   python gurobi.py
    ```
-
-   Replace `your-instance.tsp` with your TSP instance file.
-
-3. **Adjust Parameters**
-
-   You can modify parameters in `main.py` or pass them as command-line arguments:
-
-   - `--iterations`: Number of iterations (default: 30000)
-   - `--alpha`: Initial learning rate (default: 0.8)
-   - `--gamma_alpha`: Learning rate decay factor (default: 0.99997)
-   - `--gamma_h`: Neighborhood decay factor (default: 0.9997)
 
 4. **View Results**
 
@@ -162,14 +134,6 @@ The algorithm was tested using several benchmark instances from the **National T
 - **Qatar**: 194 cities
 - **Uruguay**: 734 cities
 - **Finland**: 10,639 cities
-
-### Parameters Used
-
-- **Population Size**: 8 × number of cities
-- **Initial Learning Rate (`α0`)**: 0.8
-- **Learning Rate Decay Factor (`γ_α`)**: 0.99997
-- **Initial Neighborhood Radius**: Equal to the number of cities
-- **Neighborhood Decay Factor (`γ_h`)**: 0.9997
 
 ---
 
