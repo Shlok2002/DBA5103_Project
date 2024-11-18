@@ -77,7 +77,7 @@ The project is implemented in **Python 3** and is designed to work with TSP inst
 ├── data
 │   └── [Your TSPLIB .tsp files]
 ├── output
-│   └── [Generated plots and results]
+│   └── optimal_route_output_image
 ├── requirements.txt
 ├── README.md
 ```
