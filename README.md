@@ -222,6 +222,12 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 For any inquiries or feedback, please open an issue or contact the repository owner.
 
+The issue is that you’re using the `![Github]` syntax, which is for images, not links. To create a clickable link in Markdown, you should use `[text](URL)`.
+
+## Project Motivation
+
+This project was inspired by the work detailed in [this GitHub repository](https://github.com/diego-vicente/som-tsp/tree/master). It provided valuable insights into implementing self-organizing maps for solving the Traveling Salesperson Problem (TSP), forming the basis for the ideas and methodology we have built upon in our project.
+
 ---
 
 Thank you for using this implementation! We hope it serves as a valuable tool for exploring heuristic solutions to the Traveling Salesman Problem using Self-Organizing Maps.
